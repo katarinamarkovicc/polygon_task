@@ -1,0 +1,16 @@
+﻿<Window x:Class="Zadatak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadatak"
+        mc:Ignorable="d"
+        Title="Mnogougao" Height="450" Width="800">
+    <DockPanel>
+        <Canvas Name="GridCanvas" Width="800" Background="RosyBrown" Margin="0,0,0,-0.333" MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Background="Bisque" Width="50" PreviewTextInput="textBox_previewTextInput" Canvas.Left="206"/>
+            <Label Background="Beige" Content="Unesite broj temena mnogougla:" Width="206" Height="34" />
+            <Label x:Name="label" Content="" Canvas.Left="589" Canvas.Top="385" Width="201" Background="MistyRose"/>
+        </Canvas>
+    </DockPanel>
+</Window>
